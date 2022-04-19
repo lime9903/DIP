@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 
 src = cv2.imread('./data/rect.jpg', cv2.IMREAD_GRAYSCALE)
-
+cv2.imshow('src', src)
 #1
 gx = cv2.Sobel(src, cv2.CV_32F, 1, 0, ksize=3)
 gy = cv2.Sobel(src, cv2.CV_32F, 0, 1, ksize=3)
